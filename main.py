@@ -4,7 +4,7 @@ import ssl
 import subprocess
 
 class Scrapper:
-    def __init__(self, url, headless=True, install_firefox=True, salvar_pagina=False, buscar):
+    def __init__(self, url, headless=True, install_firefox=True, salvar_pagina=False):
         if install_firefox:
             bash_script_path = './assets/installFirefox.sh'
             subprocess.run(['bash', bash_script_path], capture_output=True, text=True)
@@ -12,7 +12,7 @@ class Scrapper:
         ssl._create_default_https_context = ssl._create_unverified_context
 
         self.headless = headless
-        self.buscar = buscar
+        # self.buscar = buscar
         self.url = url
         self.links = []
         self.driver = navegador_firefox(headless)
@@ -86,12 +86,10 @@ class Scrapper:
             structured_data.append(product_data)
         
         # Convert the structured data to JSON
-        with open(f"./downloads/{self.buscar}.json", "w") as f:
+        with open(f"./downloads/balanca.json", "w") as f:
             f.write(json.dumps(structured_data, indent=4))
         
-        return json_file
-
-
+        return structured_data
 
 
 if __name__ == "__main__":
@@ -103,7 +101,7 @@ if __name__ == "__main__":
                         headless=False,
                         install_firefox=False,
                         salvar_pagina=False,
-                        buscar="balança")
+                        )
     
     scrapper.navega()
 
