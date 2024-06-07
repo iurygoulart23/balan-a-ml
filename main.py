@@ -43,8 +43,28 @@ class Scrapper:
         
         return resultados
     
+    def troca_pag(self):
+
+        from selenium.webdriver.common.by import By
+
+        # Localizar o elemento que contém o link para a próxima página
+        next_page_element = self.driver.find_element(By.CSS_SELECTOR, 'li.andes-pagination__button--next a')
+        
+        # Obter o valor do atributo href do elemento
+        next_page_link = next_page_element.get_attribute('href')
+        
+        # Clicar no link para a próxima página
+        self.driver.get(next_page_link)
+
+        return
     
-    def parse_results_to_json(self, results):
+    def get_next_pag_link(self) -> str:
+        
+        
+
+        return next_page_link
+
+    def parse_results_to_json(self, results, pag):
         
         import re
         import json
@@ -90,7 +110,7 @@ class Scrapper:
             print(json.dumps(structured_data, indent=4))
 
         # Convert the structured data to JSON
-        with open(f"./downloads/{self.buscar}.json", "w") as f:
+        with open(f"./downloads/{self.buscar}_pag{pag}.json", "w") as f:
             f.write(json.dumps(structured_data, indent=4))
         
         return structured_data
@@ -111,8 +131,14 @@ if __name__ == "__main__":
     scrapper.navega()
 
     tempo_espera_aleatorio(low=2, high=3)
-    
-    results = scrapper.get_data()
-    results_json = scrapper.parse_results_to_json(results)
-    
+
+    for pag in range(0, 10):
+
+        results = scrapper.get_data()
+        results_json = scrapper.parse_results_to_json(results, pag)
+
+        scrapper.troca_pag()
+        tempo_espera_aleatorio(low=2, high=4)
+
+
     scrapper.fecha_navegador()
