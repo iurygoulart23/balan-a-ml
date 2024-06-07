@@ -4,7 +4,7 @@ import ssl
 import subprocess
 
 class Scrapper:
-    def __init__(self, url, headless=True, install_firefox=True, salvar_pagina=False):
+    def __init__(self, url, buscar, headless=True, install_firefox=True, salvar_pagina=False, imprimir=False):
         if install_firefox:
             bash_script_path = './assets/installFirefox.sh'
             subprocess.run(['bash', bash_script_path], capture_output=True, text=True)
@@ -12,9 +12,10 @@ class Scrapper:
         ssl._create_default_https_context = ssl._create_unverified_context
 
         self.headless = headless
-        # self.buscar = buscar
+        self.buscar = buscar
         self.url = url
         self.links = []
+        self.imprimir = imprimir
         self.driver = navegador_firefox(headless)
         self.salvar_pagina = salvar_pagina
     
@@ -85,8 +86,11 @@ class Scrapper:
             # Add the product data to the structured data list
             structured_data.append(product_data)
         
+        if self.imprimir:
+            print(json.dumps(structured_data, indent=4))
+
         # Convert the structured data to JSON
-        with open(f"./downloads/balanca.json", "w") as f:
+        with open(f"./downloads/{self.buscar}.json", "w") as f:
             f.write(json.dumps(structured_data, indent=4))
         
         return structured_data
@@ -101,16 +105,14 @@ if __name__ == "__main__":
                         headless=False,
                         install_firefox=False,
                         salvar_pagina=False,
-                        )
+                        buscar='balança',
+                        imprimir=True)
     
     scrapper.navega()
 
-    tempo_espera_aleatorio(low=4, high=6)
+    tempo_espera_aleatorio(low=2, high=3)
     
     results = scrapper.get_data()
     results_json = scrapper.parse_results_to_json(results)
-    print(results_json)
-
-    tempo_espera_aleatorio(low=2, high=3)
     
     scrapper.fecha_navegador()
