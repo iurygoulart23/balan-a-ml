@@ -31,8 +31,19 @@
         "product_name": "Balan\u00e7a Eletronica Bagagem Digital M\u00e3o Com Gancho Mala 50kg Cor Preto",
         "price": "29.49",
         "rating": "4.6",
-        "opinions": "129",
+        "opinions": "130",
         "free_shipping": false,
+        "multiple_colors": false
+    },
+    {
+        "brand": "Colageno Collagen Pro Sem Sabor Neutro 450g Nutrify",
+        "product_name": "R$",
+        "price": "121.36",
+        "original_price": "121.36",
+        "discount": "26",
+        "rating": "4.8",
+        "opinions": "311",
+        "free_shipping": true,
         "multiple_colors": false
     },
     {
@@ -61,13 +72,13 @@
         "multiple_colors": false
     },
     {
-        "brand": "Balan\u00e7a Comercial Digital Toledo Prix 4 Uno Ethernet e Wi-fi 32kg Bivolt Preto 359 mm x 251 mm 16 cm",
-        "product_name": "por Greycom",
-        "price": "429.71",
-        "rating": "4.7",
-        "opinions": "366",
+        "brand": "Balan\u00e7a Plataforma Digital 200kg 40x30 1 Ano Garantia + Nf",
+        "product_name": "R$",
+        "price": "468.90",
+        "rating": "4.5",
+        "opinions": "118",
         "free_shipping": true,
-        "multiple_colors": false
+        "multiple_colors": true
     },
     {
         "brand": "Balan\u00e7a Comercial Digital 40kg Alta Precis\u00e3o Bivolt 110/220v",
@@ -81,13 +92,13 @@
         "multiple_colors": false
     },
     {
-        "brand": "Balan\u00e7a Plataforma Digital 200kg 40x30 1 Ano Garantia + Nf",
-        "product_name": "R$",
-        "price": "468.90",
-        "rating": "4.5",
-        "opinions": "118",
+        "brand": "Balan\u00e7a Comercial Digital Toledo Prix 4 Uno Ethernet e Wi-fi 32kg Bivolt Preto 359 mm x 251 mm 16 cm",
+        "product_name": "por Greycom",
+        "price": "429.71",
+        "rating": "4.7",
+        "opinions": "366",
         "free_shipping": true,
-        "multiple_colors": true
+        "multiple_colors": false
     },
     {
         "brand": "Balan\u00e7a Cozinha Modus 2012 A\u00e7o Inox Cor Prateado",
@@ -153,22 +164,6 @@
         "multiple_colors": false
     },
     {
-        "brand": "Balan\u00e7a Digital Corporal Bioimpedancia Aplicativo Bluetooth",
-        "product_name": "por Relax Medic",
-        "price": "239.90",
-        "free_shipping": true,
-        "multiple_colors": false
-    },
-    {
-        "brand": "Balan\u00e7a Digital Corporal Vidro Ate 180kg Banheiro Academia",
-        "product_name": "por MFL Acessorios",
-        "price": "44.65",
-        "original_price": "35.27",
-        "discount": "21",
-        "free_shipping": false,
-        "multiple_colors": false
-    },
-    {
         "brand": "Relaxmedic RM-BD0015A 180kg branco 31x31cm",
         "product_name": "por Relax Medic",
         "price": "809.91",
@@ -180,9 +175,23 @@
         "multiple_colors": true
     },
     {
+        "brand": "OFERTA DO DIA",
+        "product_name": "Omron Premium HN-289 balan\u00e7a digital Silky grey",
+        "price": "172.14",
+        "free_shipping": true,
+        "multiple_colors": true
+    },
+    {
+        "brand": "Balan\u00e7a Digital Corporal Bioimpedancia Aplicativo Bluetooth",
+        "product_name": "por Relax Medic",
+        "price": "239.90",
+        "free_shipping": true,
+        "multiple_colors": false
+    },
+    {
         "brand": "Balan\u00e7a comercial digital UPX Solution EA-32 32kg 110V/220V 335 mm x 225 mm",
         "product_name": "R$",
-        "price": "61.18",
+        "price": "66.50",
         "rating": "4.5",
         "opinions": "193",
         "free_shipping": true,
@@ -246,8 +255,8 @@
     },
     {
         "brand": "Balan\u00e7a de cozinha digital Tomate SF-410 pesa at\u00e9 5kg",
-        "product_name": "R$",
-        "price": "3.30",
+        "product_name": "por 8 Oitava Mall",
+        "price": "38.87",
         "rating": "4.6",
         "opinions": "715",
         "free_shipping": false,
@@ -265,6 +274,7 @@
     {
         "brand": "Balan\u00e7a Digital Ramuza Dcl 6/15/35kg X 2/5/10g",
         "product_name": "R$",
+        "price": "53.61",
         "rating": "4.7",
         "opinions": "193",
         "free_shipping": true,
@@ -430,18 +440,11 @@
         "multiple_colors": true
     },
     {
-        "brand": "15 Pilhas Bateria Cr2032 Elgin Controle Apple Hp12c Balan\u00e7a",
-        "product_name": "por Elgin",
-        "price": "29.99",
-        "free_shipping": false,
-        "multiple_colors": false
-    },
-    {
-        "brand": "Mini Balan\u00e7a Digital Eletr\u00f4nica De Precis\u00e3o De 0.01 A 500g Cor Cinza",
-        "product_name": "por MFL Acessorios",
-        "price": "36.60",
-        "original_price": "31.11",
-        "discount": "15",
+        "brand": "Mini Balan\u00e7a Digital De Bolso E Alta Precis\u00e3o 0,01g At\u00e9 200g Cor Prata",
+        "product_name": "R$",
+        "price": "21.59",
+        "rating": "4.1",
+        "opinions": "22",
         "free_shipping": false,
         "multiple_colors": false
     },
@@ -455,10 +458,20 @@
         "multiple_colors": true
     },
     {
-        "brand": "Balan\u00e7a Digital De Bolso Mini E Alta Precis\u00e3o 0,1g At\u00e9 500g",
+        "brand": "Cabo Microfone 2x0,30 Balanceado Estereo Blindado Kato 100 M",
         "product_name": "R$",
-        "rating": "4.5",
-        "opinions": "97",
+        "price": "24.63",
+        "rating": "4.8",
+        "opinions": "61",
+        "free_shipping": true,
+        "multiple_colors": false
+    },
+    {
+        "brand": "Mini Balan\u00e7a Digital Eletr\u00f4nica De Precis\u00e3o De 0.01 A 500g Cor Cinza",
+        "product_name": "por MFL Acessorios",
+        "price": "36.60",
+        "original_price": "31.11",
+        "discount": "15",
         "free_shipping": false,
         "multiple_colors": false
     },
@@ -471,13 +484,6 @@
         "rating": "4.6",
         "opinions": "623",
         "free_shipping": false,
-        "multiple_colors": false
-    },
-    {
-        "brand": "Balan\u00e7a Digital Industrial 300kg X 50g Com Bateria - Balmak Cor Preto 110V/220V",
-        "product_name": "R$",
-        "price": "134.89",
-        "free_shipping": true,
         "multiple_colors": false
     }
 ]
