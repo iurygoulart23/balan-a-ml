@@ -1,0 +1,44 @@
+
+Para identificar se o produto é uma balança e extrair a marca, vamos analisar as chaves "brand" e "product_name". A chave "brand" contém a palavra "Balança", o que indica que o produto é uma balança. A marca parece estar indicada na chave "product_name" como "Relax Medic". Vamos criar um novo JSON com as informações solicitadas:
+
+```json
+{
+  "brand": "Balança Bioimpedância Corporal Digital Bodyscan - Relaxmedic Cor Preto",
+  "product_name": "por Relax Medic",
+  "price": "809.91",
+  "original_price": "809.91",
+  "discount": "37",
+  "rating": "4.8",
+  "opinions": "884",
+  "free_shipping": true,
+  "multiple_colors": true,
+  "balança": true,
+  "marca": "Relax Medic"
+}
+```
+```json
+{
+  "brand": "MAIS VENDIDO",
+  "product_name": "Balança Digital Corporal Vidro Academia Banheiro Até 150kg Cor Branco",
+  "price": "49.90",
+  "original_price": "32.93",
+  "discount": "34",
+  "free_shipping": False,
+  "multiple_colors": False,
+  "balança": True,
+  "marca": "MAIS VENDIDO"
+}
+```
+```json
+{
+  "brand": "Balança Cozinha Modus 2012 Aço Inox Cor Prateado",
+  "product_name": "R$",
+  "price": "39.98",
+  "rating": "4.6",
+  "opinions": "960",
+  "free_shipping": false,
+  "multiple_colors": false,
+  "balança": true,
+  "marca": "Modus"
+}
+```
