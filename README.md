@@ -10,6 +10,15 @@ O codigo consiste em:
     ou se é apenas um acessório para o produto. (podendo descartar o que não é necessário)
 <br>3 - Cruza com os dados do site do INMETRO para ver se a marca já tem o registro desse produto.
 
+Para o classificador do chat GPT funcionar, você precisara:
+<br>- Criar um recurso na Azure Open Ai
+<br>- Criar um modelo para utilizar
+<br>- Pegar esses dados abaixo e criar uma variavel de ambiente
+**MODEL_ENGINE**
+**API_BASE**
+**API_KEY**
+**API_VERSION**
+
 Foi utilizado `python 3.10.14` 
 
 ### Bibliotecas usadas:
