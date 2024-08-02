@@ -3,3 +3,4 @@ numpy==1.23.5
 Pillow==10.3.0
 selenium==4.21.0
 webdriver_manager==4.0.1
+openai==0.28.0

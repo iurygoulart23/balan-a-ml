@@ -6,7 +6,7 @@ import subprocess
 class Scrapper:
     def __init__(self, url, buscar, headless=True, install_firefox=True, salvar_pagina=False, imprimir=False):
         if install_firefox:
-            bash_script_path = './assets/installFirefox.sh'
+            bash_script_path = '../assets/installFirefox.sh'
             subprocess.run(['bash', bash_script_path], capture_output=True, text=True)
 
         ssl._create_default_https_context = ssl._create_unverified_context
@@ -26,7 +26,7 @@ class Scrapper:
         self.driver.implicitly_wait(2)
         self.driver.maximize_window()
         
-        with open('assets/search.js', 'r') as f:
+        with open('../assets/search.js', 'r') as f:
             js_code = f.read()
         
         self.driver.execute_script(js_code)
@@ -110,7 +110,7 @@ class Scrapper:
             print(json.dumps(structured_data, indent=4))
 
         # Convert the structured data to JSON
-        with open(f"./downloads/{self.buscar}_pag{pag}.json", "w") as f:
+        with open(f"../downloads/{self.buscar}_pag{pag}.json", "w") as f:
             f.write(json.dumps(structured_data, indent=4))
         
         return structured_data

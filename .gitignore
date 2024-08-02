@@ -1,1 +1,5 @@
-./downloads/
+./downloads/*
+.env
+env
+./logs/
+.mercado_libre
