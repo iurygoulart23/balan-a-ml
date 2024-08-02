@@ -14,10 +14,10 @@ Para o classificador do chat GPT funcionar, você precisara:
 <br>- Criar um recurso na Azure Open Ai
 <br>- Criar um modelo para utilizar
 <br>- Pegar esses dados abaixo e criar uma variavel de ambiente
-**MODEL_ENGINE**
-**API_BASE**
-**API_KEY**
-**API_VERSION**
+<br>**MODEL_ENGINE**
+<br>**API_BASE**
+<br>**API_KEY**
+<br>**API_VERSION**
 
 Foi utilizado `python 3.10.14` 
 
